@@ -6,6 +6,7 @@
 
 body {
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 h1,
@@ -20,6 +21,7 @@ h1 {
 
 h2 {
   font-size: 48px;
+  margin-top: 10px;
 }
 
 h3 {
@@ -37,11 +39,6 @@ p {
   margin-top: 40px;
   justify-content: center;
 }
-
-.navigation-links a {
-  margin: 20px;
-}
-
 .primary-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -62,9 +59,22 @@ p {
 }
 
 .homepage-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  border: var(--border);
+}
+
+a {
+  transition: all 200ms ease;
+}
+a:hover {
+  opacity: 0.7;
+  background-color: var(--secondary-color);
   color: var(--primary-color);
-  text-align: center;
-  display: block;
 }
 
 .about-paragraphs {
@@ -85,4 +95,38 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 768px){
+h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 576px){
+h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 768px){
+p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+p {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .project-link {
+    display: block;
+    text-align: center;
+  }
 }
